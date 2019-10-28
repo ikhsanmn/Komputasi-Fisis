@@ -1,4 +1,4 @@
-# Komputasi-Fisis
+# Power-Method-Iterated
 
 This program is multiply vector 2 dimension for power method at aK 
 a0 is vector basic 
