@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="vect3.js"></script>
+</head>
+<body>
+	<textarea id="Text1" cols="10" rows="10" 
+	placeholder="1 2 3 4 5
+6 7 8 9 10"></textarea>
+	<button onclick="buttonBox()">input</button>
+	<script type="text/javascript">
+	var zara = new Vect3(2,1,3);
+	console.log(zara);
+function buttonBox(){
+	// function loadParams() {
+	// clearText(taIn);
+	// addText(params).to(taIn);
+	// }
+	var p = document.getElementById("Text1").value;
+	var x = [];
+	var res = p.split(" ");
+	var det = p.split("\n");
+	//var res2 = det.split(" ");
+	console.log(det);
+	 var maks =[];
+	 var matrixA=[];
+	 var y= [];
+	 var z= [];
+	 var dz= [];
+	////////////////////////////////////////////
+	for(k=0;k<det.length;k++){
+		u=det[k];
+		res2=u.split(" ");
+		console.log(res2);
+		vx = res2.map(parseFloat);
+		console.log(vx);
+		z.push(vx);	
+	}
+	console.log(z);
+	////////////////////////////////////////////
+	
+	////////////////////////////////////////////
+	function Array2Dimensi(x,y){
+    	var array2D = new Array(y);
+
+    	for(var i = 0; i < array2D.length; i++)
+    	{
+        array2D[i] = new Array(x);
+    	}
+    	return array2D;
+	}	
+	///////////////////////////////////////////
+}
+	</script>
+
+</body>
+</html>
